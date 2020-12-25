@@ -23,8 +23,10 @@ use_circletype <- function() {
     shiny::tags$head(
       shiny::tags$script(
         src = "circletype-assets/circletype.min.js"
+      ),
+      shiny::tags$script(
+        src = "custom-assets/destroy.js"
       )
     )
   )
-
 }

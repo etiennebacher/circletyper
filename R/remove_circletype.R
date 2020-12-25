@@ -1,10 +1,8 @@
-remove_circletype <- function(circletype_id) {
+remove_circletype <- function(id, session = NULL) {
 
-  htmltools::tags$script(
-    paste0(
-      circletype_id, ".destroy();
-      console.log('test');"
-    )
-  )
+  if(is.null(session))
+    session <- shiny::getDefaultReactiveDomain()
+
+  session$sendCustomMessage("circletype-destroy", "testh1")
 
 }
