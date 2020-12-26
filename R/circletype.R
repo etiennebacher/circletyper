@@ -49,11 +49,13 @@ circletype <- function(ui_element, dir = c(-1, 1), radius = 200) {
         # center the text, this should be done via "classic" centering of shiny
         # elements.
 
-        "const ", circletype_id, " = new CircleType(document.getElementById('", id_element, "'))
+        "var circleTypes = {
+        '", circletype_id, "': new CircleType(document.getElementById('", id_element, "'))
                   .dir(", dir, ")
                   .forceWidth(true)
-                  .radius(", radius, ");",
-        circletype_id
+                  .radius(", radius, ")
+        };
+        circleTypes['", circletype_id, "']"
       )
     )
   )
