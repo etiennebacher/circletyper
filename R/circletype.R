@@ -20,7 +20,7 @@
 #'
 #' shinyApp(ui, server)
 #' }
-circletype <- function(ui_element, dir = c(-1, 1), radius = 200) {
+circletype <- function(ui_element, dir = 1, radius = 200) {
 
   if (missing(ui_element)) stop("Must have an ui_element")
 
@@ -34,6 +34,15 @@ circletype <- function(ui_element, dir = c(-1, 1), radius = 200) {
     stop("ui_element must have an id")
   }
 
+  if (dir != -1 & dir != 1) {
+    stop("dir must be equal to -1 or 1")
+  }
+
+  if (!is.numeric(radius)) {
+    stop("radius must be numeric")
+  }
+
+  # Special id needed to be able to destroy a specific circletype
   circletype_id <- paste0("circletype", id_element)
 
   htmltools::tagList(
