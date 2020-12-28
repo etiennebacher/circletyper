@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^\.github$
+^README\.Rmd$
+^demo_after\.png$
+^demo_before\.png$

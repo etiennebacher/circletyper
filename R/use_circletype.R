@@ -4,7 +4,7 @@
 #' @export
 #'
 #' @examples
-#' if (interative()) {
+#' if (interactive()) {
 #' library(shiny)
 #'
 #' ui <- fluidPage(

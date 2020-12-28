@@ -4,7 +4,7 @@
 \alias{circletype}
 \title{Apply a curvature on text elements}
 \usage{
-circletype(ui_element, dir = c(-1, 1), radius = 200)
+circletype(ui_element, dir = 1, radius = 200)
 }
 \arguments{
 \item{ui_element}{Text element on which the curvature should be applied. Must be something like `h1()`, `h2()`, etc. This element MUST have an id. Doesn't work on other HTML elements such as buttons.}
@@ -20,7 +20,7 @@ A curved text.
 Apply a curvature on text elements
 }
 \examples{
-if (interative()) {
+if (interactive()) {
 library(shiny)
 
 ui <- fluidPage(

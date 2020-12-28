@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' if (interative()) {
+#' if (interactive()) {
 #' library(shiny)
 #'
 #' ui <- fluidPage(
@@ -45,9 +45,9 @@ circletype <- function(ui_element, dir = 1, radius = 200) {
   # Special id needed to be able to destroy a specific circletype
   circletype_id <- paste0("circletype", id_element)
 
-  htmltools::tagList(
+  shiny::tagList(
     ui_element,
-    htmltools::tags$script(
+    shiny::tags$script(
       paste0(
 
         # About forceWidth:

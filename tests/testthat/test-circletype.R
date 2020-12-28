@@ -2,14 +2,14 @@ test_that("circletype must be applied on a ui_element", {
   expect_error(circletype())
 })
 
-test_that("circletype must be applied on an htmltools element", {
+test_that("circletype must be applied on an shiny element", {
   expect_error(circletype("this is some text"))
 })
 
 test_that("ui_element must have an id", {
   expect_error(
     circletype(
-      htmltools::p("this is some text")
+      shiny::p("this is some text")
     )
   )
 })
@@ -19,17 +19,17 @@ test_that("dir possible values are 1 and -1", {
   y <- sample(-100:2, 1)
   expect_error(
     circletype(
-      htmltools::p("this is some text", id = "test"), dir = x
+      shiny::p("this is some text", id = "test"), dir = x
     )
   )
   expect_error(
     circletype(
-      htmltools::p("this is some text", id = "test"), dir = y
+      shiny::p("this is some text", id = "test"), dir = y
     )
   )
   expect_error(
     circletype(
-      htmltools::p("this is some text", id = "test"), dir = 0
+      shiny::p("this is some text", id = "test"), dir = 0
     )
   )
 })
@@ -37,14 +37,14 @@ test_that("dir possible values are 1 and -1", {
 test_that("radius must be numeric", {
   expect_error(
     circletype(
-      htmltools::p("this is some text", id = "test"),
+      shiny::p("this is some text", id = "test"),
       dir = -1, radius = "text"
     )
   )
 })
 
 test_that("circletype returns the right output", {
-  x <- circletype(htmltools::p("this is some text", id = "test"), dir = -1)
+  x <- circletype(shiny::p("this is some text", id = "test"), dir = -1)
   x <- paste(x)
   x <- gsub("\\t", "", x)
   x <- gsub("\\n", "", x)

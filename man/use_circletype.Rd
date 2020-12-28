@@ -13,7 +13,7 @@ Load depepdencies
 Load CircleType dependencies
 }
 \examples{
-if (interative()) {
+if (interactive()) {
 library(shiny)
 
 ui <- fluidPage(
