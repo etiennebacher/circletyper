@@ -44,17 +44,13 @@ test_that("radius must be numeric", {
 })
 
 test_that("circletype returns the right output", {
-  x <- circletype(shiny::p("this is some text", id = "test"), dir = -1)
-  x <- paste(x)
-  x <- gsub("\\t", "", x)
-  x <- gsub("\\n", "", x)
-  # remove additional spaces
-  x <-  gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", x, perl = TRUE)
-
-  expect_equal(
-    x,
-    "<p id=\"test\">this is some text</p><script>var circleTypes = { 'circletypetest': new CircleType(document.getElementById('test')) .dir(-1) .forceWidth(true) .radius(200) }; circleTypes['circletypetest']</script>"
-  )
+  circletype(shiny::p("this is some text", id = "test"), dir = -1) %>%
+    paste %>%
+    gsub("\\t", "", .)  %>%
+    gsub("\\n", "", .) %>%
+    # remove additional spaces
+    gsub("(?<=[\\s])\\s*|^\\s+|\\s+$", "", ., perl = TRUE) %>%
+    testthat::expect_snapshot_output()
 })
 
 
