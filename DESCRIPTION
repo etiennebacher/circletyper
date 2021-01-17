@@ -1,13 +1,13 @@
 Package: circletyper
 Type: Package
-Title: Curve Text Elements in Shiny and R Markdown Using 'CircleType.js'
-Version: 0.0.0.9000
+Title: Curve Text Elements in 'Shiny' Using 'CircleType.js'
+Version: 1.0.0
 Authors@R: 
     person(given = "Etienne",
            family = "Bacher",
            role = c("aut", "cre", "cph"),
            email = "etienne.bacher@protonmail.com")
-Description: Enables curving text elements in 'Shiny' apps and R Markdown environments.
+Description: Enables curving text elements in 'Shiny' apps.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,5 +17,7 @@ RoxygenNote: 7.1.1
 URL: https://github.com/etiennebacher/circletyper
 BugReports: https://github.com/etiennebacher/circletyper/issues
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    spelling
 Config/testthat/edition: 3
+Language: en-US

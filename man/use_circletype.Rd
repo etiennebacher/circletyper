@@ -7,7 +7,7 @@
 use_circletype()
 }
 \value{
-Load depepdencies
+Load dependencies
 }
 \description{
 Load CircleType dependencies

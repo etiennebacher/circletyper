@@ -1,6 +1,6 @@
 #' Load CircleType dependencies
 #'
-#' @return Load depepdencies
+#' @return Load dependencies
 #' @export
 #'
 #' @examples
