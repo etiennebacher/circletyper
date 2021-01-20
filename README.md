@@ -4,6 +4,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/etiennebacher/circletyper/workflows/R-CMD-check/badge.svg)](https://github.com/etiennebacher/circletyper/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/circletyper)](https://CRAN.R-project.org/package=circletyper)
 <!-- badges: end -->
 
 The goal of `{circletyper}` is to enable text curving in Shiny apps, by
@@ -53,5 +55,5 @@ shinyApp(ui, server)
 ```
 
 | Initial              | After clicking on the button |
-| -------------------- | ---------------------------- |
+|----------------------|------------------------------|
 | ![](demo_before.png) | ![](demo_after.png)          |
