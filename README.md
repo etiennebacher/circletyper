@@ -13,9 +13,11 @@ adapting [CircleType.js](https://github.com/peterhry/CircleType) into R.
 
 ## Installation
 
-For now, you can only install the development version of
-`{circletyper}`:
-
+You can install the CRAN version of `{circletyper}` with:
+``` r
+install.packages("circletyper")
+```
+or the development version with:
 ``` r
 # install.packages("devtools")
 devtools::install_github("etiennebacher/circletyper")
