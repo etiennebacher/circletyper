@@ -1,7 +1,7 @@
 Package: circletyper
 Type: Package
 Title: Curve Text Elements in 'Shiny' Using 'CircleType.js'
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person(given = "Etienne",
            family = "Bacher",
