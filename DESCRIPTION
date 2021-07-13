@@ -10,7 +10,6 @@ Authors@R:
 Description: Enables curving text elements in 'Shiny' apps.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 Imports: 
     shiny
 RoxygenNote: 7.1.1
