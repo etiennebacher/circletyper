@@ -15,8 +15,8 @@ test_that("ui_element must have an id", {
 })
 
 test_that("dir possible values are 1 and -1", {
-  x <- sample(2:100, 1)
-  y <- sample(-100:2, 1)
+  x <- -10
+  y <- 10
   expect_error(
     circletype(
       shiny::p("this is some text", id = "test"), dir = x
